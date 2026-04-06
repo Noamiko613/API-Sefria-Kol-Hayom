@@ -1,64 +1,57 @@
-# 📚 Sefria API - Mini PC Hosting Guide
+# 🚀 Kol Hayom API Standalone Hosting - Mini PC Setup
 
-This project is the **Standalone Host Service** for the Kol Hayom (Siddur) app. It serves all religious texts (Tanach, Gemara, etc.) and is designed to run in a Docker container on your Mini PC.
-
----
-
-## 🌩️ API Endpoints
-
-### 1. Offline Mode (Download All)
-- **`GET /api/download-all`**: Serves the `books.zip` bundle. 
-- *The app will call this once, unzip locally, and run without internet.*
-
-### 2. Online Mode (On-demand)
-- **`GET /api/books`**: List categories.
-- **`GET /api/books/:category`**: List specific books.
-- **`GET /api/books/:category/*filepath`**: Fetch a specific chapter or text file.
-- *The app calls these as the user browses, saving phone storage.*
+This project is the **Standalone Host Service** for the Kol Hayom (Siddur) app. Hosting this on your Mini PC makes all religious texts available to your app users worldwide!
 
 ---
 
-## 🐳 Docker Setup on Mini PC
+## 🌩️ API Overview
+- **Bulk Download (Offline)**: `GET /api/download-all` (Serves the 200MB `books.zip` bundle).
+- **On-Demand (Online)**: `GET /api/books/...` (Fast, live fetching of Tanach/Gemara/etc).
 
-### 1. Transfer Files
-Copy the **entire project folder** (`API sefria`) to your Mini PC.
+---
 
-### 2. Prepare the Data
-Ensure all texts are in the `data/` folder.  
-To generate the `books.zip` bundle for the "Download All" feature, run this on your Mini PC:
-```bash
+## ⚡ Setup Command (Throw this into PowerShell on Mini PC)
+
+Copy and paste the entire block below into your Mini PC's **PowerShell** window.  
+*(Make sure you have Docker installed and your Cloudflare Tunnel Token ready!)*
+
+```powershell
+# 1. CLONE THE REPO
+git clone https://github.com/Noamiko613/API-Sefria-Kol-Hayom.git C:\KolHayomAPI
+cd C:\KolHayomAPI
+
+# 2. GENERATE BULK ASSET ZIP (For initial Offline mode!)
 python zip-assets.py
-```
 
-### 3. Start the API
-Open a terminal in the project root and run:
-```bash
-# Build and start the container
+# 3. SET YOUR CLOUDFLARE TUNNEL TOKEN (Replace 'YOUR_TOKEN_HERE' with yours)
+$env:TUNNEL_TOKEN="YOUR_TOKEN_HERE"
+
+# 4. START DOCKER (API + CLOUDFLARE TUNNEL)
 docker-compose up -d --build
+
+# 5. DONE! Check if it's running
+docker-compose ps
+Write-Host "`n✅ API is running publicly via Cloudflare tunnel!" -ForegroundColor Green
 ```
-The API is now running on **port 3000**.
 
 ---
 
-## 🌍 Global Access (For Play Store)
+## 🐳 Docker Components
 
-To make your Mini PC's API accessible to anyone using your app, you must expose it to the internet.
+- **sefria-api**: The Core Express/Node server running on port **3000**.
+- **sefria-tunnel**: The Cloudflare `cloudflared` worker that securely exposes your API to the internet.
 
-### Option A: Cloudflare Tunnel (Recommended)
-1.  Install `cloudflared` on your Mini PC.
-2.  Run: `cloudflared tunnel --url http://localhost:3000`
-3.  Use the provided HTTPS URL in your Flutter app!
+## 🛠 Maintenance
 
-### Option B: Port Forwarding
-1.  Forward port **3000** on your router to the local IP of your Mini PC.
+### To update your texts:
+1. Update files in the `data/` directory.
+2. Run `python zip-assets.py` to regenerate the "Download All" bundle.
+3. Restart Docker: `docker-compose restart sefria-api`.
+
+### To change your public URL:
+1. Go to your [Cloudflare Dashboard](https://dash.cloudflare.com).
+2. Update your **Public Hostname** in the Zero Trust section to point to `http://sefria-api:3000`.
 
 ---
 
-## 📱 Flutter Integration
-
-In your Flutter app, point your base URL to your public API (e.g., `https://api.myjewishapp.com`).
-
-**Workflow:**
-- **At startup**: Ask the user: "Download All (200MB)" or "Stream Online".
-- **If Download All**: Hit `/api/download-all`, unzip to local storage, and use files locally.
-- **If Stream**: Hit `/api/books/...` whenever a text is needed.
+**Built with ❤️ for the Jewish learning community.**
