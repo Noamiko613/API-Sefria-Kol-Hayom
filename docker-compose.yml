@@ -26,8 +26,8 @@ services:
   tunnel:
     image: cloudflare/cloudflared:latest
     container_name: sefria-tunnel
-    # This command creates a Quick Tunnel (temporary URL) automatically
-    command: ["tunnel", "--url", "http://sefria-api:3000", "--no-autoupdate"]
+    # Final Fix: No 'tunnel' word to avoid token requirements
+    command: ["--url", "http://sefria-api:3000", "--no-autoupdate"]
     restart: unless-stopped
     depends_on:
       - sefria-api
