@@ -1,5 +1,4 @@
 
-
 services:
   sefria-api:
     build:
@@ -22,7 +21,10 @@ services:
     networks:
       - sefria-network
 
-    # Permanent Cloudflare Tunnel setup
+  # EXPOSE YOUR API WORLDWIDE WITH CLOUDFLARE
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    container_name: sefria-tunnel
     command: tunnel --no-autoupdate run
     environment:
       - TUNNEL_TOKEN=${TUNNEL_TOKEN}
