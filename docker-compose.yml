@@ -26,10 +26,8 @@ services:
   tunnel:
     image: cloudflare/cloudflared:latest
     container_name: sefria-tunnel
-    command: tunnel --no-autoupdate run
-    environment:
-      # PASTE YOUR TUNNEL TOKEN FROM CLOURELARE DASHBOARD HERE
-      - TUNNEL_TOKEN=${TUNNEL_TOKEN:-TUNNEL_TOKEN_STUB}
+    # This command creates a Quick Tunnel (temporary URL) automatically
+    command: tunnel --no-autoupdate --url http://sefria-api:3000
     restart: unless-stopped
     depends_on:
       - sefria-api
