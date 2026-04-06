@@ -22,12 +22,10 @@ services:
     networks:
       - sefria-network
 
-  # EXPOSE YOUR API WORLDWIDE WITH CLOUDFLARE
-  tunnel:
-    image: cloudflare/cloudflared:latest
-    container_name: sefria-tunnel
-    # Final Fix: No 'tunnel' word to avoid token requirements
-    command: ["--url", "http://sefria-api:3000", "--no-autoupdate"]
+    # Permanent Cloudflare Tunnel setup
+    command: tunnel --no-autoupdate run
+    environment:
+      - TUNNEL_TOKEN=${TUNNEL_TOKEN}
     restart: unless-stopped
     depends_on:
       - sefria-api
