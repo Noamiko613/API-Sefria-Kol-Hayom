@@ -2,8 +2,8 @@
 node_modules
 npm-debug.log*
 
-# Data (mounted as volume)
-data/
+# Data
+# data/ (removed to allow COPY in Dockerfile)
 
 # Development
 .git
