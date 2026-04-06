@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "source": "mobile.tora.ws (scraped)",
+    "nusach": "Yesod",
+    "description": "Prayer texts from the Yesod siddur tradition"
+  },
+  "daily_prayers": {
+    "shacharit": {
+      "name": "Shacharit (Morning Prayer)",
+      "hebrew": "שחרית",
+      "sections": [
+        "birchot_hashachar",
+        "korbanot",
+        "pesukei_dzimra",
+        "kriat_shma",
+        "amidah",
+        "tachanun",
+        "aleinu",
+        "shir_shel_yom"
+      ]
+    },
+    "mincha": {
+      "name": "Mincha (Afternoon Prayer)",
+      "hebrew": "מנחה",
+      "sections": [
+        "ashrei",
+        "kriat_shma",
+        "amidah",
+        "tachanun",
+        "aleinu"
+      ]
+    },
+    "maariv": {
+      "name": "Maariv (Evening Prayer)",
+      "hebrew": "ערבית",
+      "sections": [
+        "shema",
+        "amidah",
+        "aleinu"
+      ]
+    }
+  },
+  "shabbat_prayers": {
+    "kabbalat_shabbat": {
+      "name": "Kabbalat Shabbat",
+      "hebrew": "קבלת שבת"
+    },
+    "shacharit": {
+      "name": "Shabbat Shacharit",
+      "hebrew": "שחרית של שבת"
+    },
+    "musaf": {
+      "name": "Shabbat Musaf",
+      "hebrew": "מוסף"
+    },
+    "mincha": {
+      "name": "Shabbat Mincha",
+      "hebrew": "מנחה של שבת"
+    },
+    "havdalah": {
+      "name": "Havdalah",
+      "hebrew": "הבדלה"
+    }
+  },
+  "special_prayers": {
+    "hallel": "הלל",
+    "kiddush_levana": "קידוש לבנה",
+    "tefilat_haderech": "תפילת הדרך",
+    "birkat_hachama": "ברכת החמה",
+    "selichot": "סליחות"
+  }
+}

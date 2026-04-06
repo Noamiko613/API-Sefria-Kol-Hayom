@@ -1,0 +1,645 @@
+{
+  "yesod_prayers": [
+    {
+      "file": "tora_content.txt",
+      "path": "yesod_prayers\\root\\tora_content.txt",
+      "size_bytes": 263,
+      "category": "root"
+    },
+    {
+      "file": "tora_page.html",
+      "path": "yesod_prayers\\root\\tora_page.html",
+      "size_bytes": 5044,
+      "category": "root"
+    },
+    {
+      "file": "tora_raw.html",
+      "path": "yesod_prayers\\root\\tora_raw.html",
+      "size_bytes": 5044,
+      "category": "root"
+    },
+    {
+      "file": "tora_text.txt",
+      "path": "yesod_prayers\\root\\tora_text.txt",
+      "size_bytes": 263,
+      "category": "root"
+    },
+    {
+      "file": "yesod_prayer_structure.json",
+      "path": "yesod_prayers\\root\\yesod_prayer_structure.json",
+      "size_bytes": 1577,
+      "category": "root"
+    },
+    {
+      "file": "בִּרְכַּת אֲשֶׁר יָצַר.txt",
+      "path": "yesod_prayers\\root\\בִּרְכַּת אֲשֶׁר יָצַר.txt",
+      "size_bytes": 700,
+      "category": "root"
+    },
+    {
+      "file": "ברכת המזון לבד סדר רב עמרם.txt",
+      "path": "yesod_prayers\\root\\ברכת המזון לבד סדר רב עמרם.txt",
+      "size_bytes": 13046,
+      "category": "root"
+    },
+    {
+      "file": "ברכת לבנה.txt",
+      "path": "yesod_prayers\\root\\ברכת לבנה.txt",
+      "size_bytes": 1352,
+      "category": "root"
+    },
+    {
+      "file": "ברכת מעין שלוש.txt",
+      "path": "yesod_prayers\\root\\ברכת מעין שלוש.txt",
+      "size_bytes": 2404,
+      "category": "root"
+    },
+    {
+      "file": "סדר ק_ש על המיטה.txt",
+      "path": "yesod_prayers\\root\\סדר ק_ש על המיטה.txt",
+      "size_bytes": 4681,
+      "category": "root"
+    },
+    {
+      "file": "ראש חודש.txt",
+      "path": "yesod_prayers\\root\\ראש חודש.txt",
+      "size_bytes": 31622,
+      "category": "root"
+    },
+    {
+      "file": "שבת.txt",
+      "path": "yesod_prayers\\root\\שבת.txt",
+      "size_bytes": 149713,
+      "category": "root"
+    },
+    {
+      "file": "תפילות וברכות פרטיות.txt",
+      "path": "yesod_prayers\\root\\תפילות וברכות פרטיות.txt",
+      "size_bytes": 23243,
+      "category": "root"
+    },
+    {
+      "file": "תפילת מנחה.txt",
+      "path": "yesod_prayers\\root\\תפילת מנחה.txt",
+      "size_bytes": 21229,
+      "category": "root"
+    },
+    {
+      "file": "תפילת שחרית.txt",
+      "path": "yesod_prayers\\root\\תפילת שחרית.txt",
+      "size_bytes": 101636,
+      "category": "root"
+    },
+    {
+      "file": "תפלת ערבית לחול ומוצ_ש.txt",
+      "path": "yesod_prayers\\root\\תפלת ערבית לחול ומוצ_ש.txt",
+      "size_bytes": 28555,
+      "category": "root"
+    },
+    {
+      "file": "nusach_ashkenaz__מנחה לשבת.txt",
+      "path": "yesod_prayers\\daily\\nusach_ashkenaz__מנחה לשבת.txt",
+      "size_bytes": 42895,
+      "category": "daily"
+    },
+    {
+      "file": "nusach_ashkenaz_שחרית לשבת.txt",
+      "path": "yesod_prayers\\daily\\nusach_ashkenaz_שחרית לשבת.txt",
+      "size_bytes": 230410,
+      "category": "daily"
+    },
+    {
+      "file": "nusach_ashkenaz_תפילת מנחה.txt",
+      "path": "yesod_prayers\\daily\\nusach_ashkenaz_תפילת מנחה.txt",
+      "size_bytes": 52724,
+      "category": "daily"
+    },
+    {
+      "file": "nusach_edot_mizrach_מנחה לימי החול.txt",
+      "path": "yesod_prayers\\daily\\nusach_edot_mizrach_מנחה לימי החול.txt",
+      "size_bytes": 79334,
+      "category": "daily"
+    },
+    {
+      "file": "nusach_edot_mizrach_מנחה של שבת.txt",
+      "path": "yesod_prayers\\daily\\nusach_edot_mizrach_מנחה של שבת.txt",
+      "size_bytes": 59861,
+      "category": "daily"
+    },
+    {
+      "file": "nusach_edot_mizrach_ערבית לימי החול.txt",
+      "path": "yesod_prayers\\daily\\nusach_edot_mizrach_ערבית לימי החול.txt",
+      "size_bytes": 67784,
+      "category": "daily"
+    },
+    {
+      "file": "nusach_edot_mizrach_שחרית לחול.txt",
+      "path": "yesod_prayers\\daily\\nusach_edot_mizrach_שחרית לחול.txt",
+      "size_bytes": 267625,
+      "category": "daily"
+    },
+    {
+      "file": "nusach_edot_mizrach_שחרית של שבת.txt",
+      "path": "yesod_prayers\\daily\\nusach_edot_mizrach_שחרית של שבת.txt",
+      "size_bytes": 179192,
+      "category": "daily"
+    },
+    {
+      "file": "nusach_sefarad_maariv_lechol.txt",
+      "path": "yesod_prayers\\daily\\nusach_sefarad_maariv_lechol.txt",
+      "size_bytes": 52139,
+      "category": "daily"
+    },
+    {
+      "file": "nusach_sefarad_mincha_lechol.txt",
+      "path": "yesod_prayers\\daily\\nusach_sefarad_mincha_lechol.txt",
+      "size_bytes": 72469,
+      "category": "daily"
+    },
+    {
+      "file": "nusach_sefarad_shabbat_mincha_and_pirkei_avot.txt",
+      "path": "yesod_prayers\\daily\\nusach_sefarad_shabbat_mincha_and_pirkei_avot.txt",
+      "size_bytes": 60058,
+      "category": "daily"
+    },
+    {
+      "file": "maariv.txt",
+      "path": "yesod_prayers\\daily_prayers\\maariv.txt",
+      "size_bytes": 150,
+      "category": "daily_prayers"
+    },
+    {
+      "file": "mincha.txt",
+      "path": "yesod_prayers\\daily_prayers\\mincha.txt",
+      "size_bytes": 150,
+      "category": "daily_prayers"
+    },
+    {
+      "file": "shacharit.txt",
+      "path": "yesod_prayers\\daily_prayers\\shacharit.txt",
+      "size_bytes": 153,
+      "category": "daily_prayers"
+    },
+    {
+      "file": "nusach_edot_mizrach_חנוכה.txt",
+      "path": "yesod_prayers\\hagim\\nusach_edot_mizrach_חנוכה.txt",
+      "size_bytes": 62923,
+      "category": "hagim"
+    },
+    {
+      "file": "nusach_sefarad_chanukah.txt",
+      "path": "yesod_prayers\\hagim\\nusach_sefarad_chanukah.txt",
+      "size_bytes": 38679,
+      "category": "hagim"
+    },
+    {
+      "file": "nusach_sefarad_sefira.txt",
+      "path": "yesod_prayers\\hagim\\nusach_sefarad_sefira.txt",
+      "size_bytes": 15165,
+      "category": "hagim"
+    },
+    {
+      "file": "_מנחה לשבת.txt",
+      "path": "yesod_prayers\\nusach_ashkenaz\\_מנחה לשבת.txt",
+      "size_bytes": 42895,
+      "category": "nusach_ashkenaz"
+    },
+    {
+      "file": "ברכות.txt",
+      "path": "yesod_prayers\\nusach_ashkenaz\\ברכות.txt",
+      "size_bytes": 38631,
+      "category": "nusach_ashkenaz"
+    },
+    {
+      "file": "מעריב.txt",
+      "path": "yesod_prayers\\nusach_ashkenaz\\מעריב.txt",
+      "size_bytes": 81149,
+      "category": "nusach_ashkenaz"
+    },
+    {
+      "file": "סידור אשכנז.txt",
+      "path": "yesod_prayers\\nusach_ashkenaz\\סידור אשכנז.txt",
+      "size_bytes": 466803,
+      "category": "nusach_ashkenaz"
+    },
+    {
+      "file": "ראש חודש.txt",
+      "path": "yesod_prayers\\nusach_ashkenaz\\ראש חודש.txt",
+      "size_bytes": 27147,
+      "category": "nusach_ashkenaz"
+    },
+    {
+      "file": "שבת.txt",
+      "path": "yesod_prayers\\nusach_ashkenaz\\שבת.txt",
+      "size_bytes": 72395,
+      "category": "nusach_ashkenaz"
+    },
+    {
+      "file": "שחרית לשבת.txt",
+      "path": "yesod_prayers\\nusach_ashkenaz\\שחרית לשבת.txt",
+      "size_bytes": 230410,
+      "category": "nusach_ashkenaz"
+    },
+    {
+      "file": "תפילות לשלוש רגלים.txt",
+      "path": "yesod_prayers\\nusach_ashkenaz\\תפילות לשלוש רגלים.txt",
+      "size_bytes": 102998,
+      "category": "nusach_ashkenaz"
+    },
+    {
+      "file": "תפילת מנחה.txt",
+      "path": "yesod_prayers\\nusach_ashkenaz\\תפילת מנחה.txt",
+      "size_bytes": 52724,
+      "category": "nusach_ashkenaz"
+    },
+    {
+      "file": "ברכת המזון.txt",
+      "path": "yesod_prayers\\nusach_edot_mizrach\\ברכת המזון.txt",
+      "size_bytes": 31738,
+      "category": "nusach_edot_mizrach"
+    },
+    {
+      "file": "חנוכה.txt",
+      "path": "yesod_prayers\\nusach_edot_mizrach\\חנוכה.txt",
+      "size_bytes": 62923,
+      "category": "nusach_edot_mizrach"
+    },
+    {
+      "file": "מוצאי שבת.txt",
+      "path": "yesod_prayers\\nusach_edot_mizrach\\מוצאי שבת.txt",
+      "size_bytes": 31290,
+      "category": "nusach_edot_mizrach"
+    },
+    {
+      "file": "מנחה לימי החול.txt",
+      "path": "yesod_prayers\\nusach_edot_mizrach\\מנחה לימי החול.txt",
+      "size_bytes": 79334,
+      "category": "nusach_edot_mizrach"
+    },
+    {
+      "file": "מנחה של שבת.txt",
+      "path": "yesod_prayers\\nusach_edot_mizrach\\מנחה של שבת.txt",
+      "size_bytes": 59861,
+      "category": "nusach_edot_mizrach"
+    },
+    {
+      "file": "סדר הדלקת נרות שבת.txt",
+      "path": "yesod_prayers\\nusach_edot_mizrach\\סדר הדלקת נרות שבת.txt",
+      "size_bytes": 99937,
+      "category": "nusach_edot_mizrach"
+    },
+    {
+      "file": "סדר ראש חודש.txt",
+      "path": "yesod_prayers\\nusach_edot_mizrach\\סדר ראש חודש.txt",
+      "size_bytes": 96299,
+      "category": "nusach_edot_mizrach"
+    },
+    {
+      "file": "ספירת העומר.txt",
+      "path": "yesod_prayers\\nusach_edot_mizrach\\ספירת העומר.txt",
+      "size_bytes": 96323,
+      "category": "nusach_edot_mizrach"
+    },
+    {
+      "file": "ערבית לימי החול.txt",
+      "path": "yesod_prayers\\nusach_edot_mizrach\\ערבית לימי החול.txt",
+      "size_bytes": 67784,
+      "category": "nusach_edot_mizrach"
+    },
+    {
+      "file": "שחרית לחול.txt",
+      "path": "yesod_prayers\\nusach_edot_mizrach\\שחרית לחול.txt",
+      "size_bytes": 267625,
+      "category": "nusach_edot_mizrach"
+    },
+    {
+      "file": "שחרית של שבת.txt",
+      "path": "yesod_prayers\\nusach_edot_mizrach\\שחרית של שבת.txt",
+      "size_bytes": 179192,
+      "category": "nusach_edot_mizrach"
+    },
+    {
+      "file": "תפילה לשלש רגלים.txt",
+      "path": "yesod_prayers\\nusach_edot_mizrach\\תפילה לשלש רגלים.txt",
+      "size_bytes": 109125,
+      "category": "nusach_edot_mizrach"
+    },
+    {
+      "file": "berachot_utefilot.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\berachot_utefilot.txt",
+      "size_bytes": 118838,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "chanukah.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\chanukah.txt",
+      "size_bytes": 38679,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "fasts_and_selichot.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\fasts_and_selichot.txt",
+      "size_bytes": 579429,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "festivals_general.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\festivals_general.txt",
+      "size_bytes": 158984,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "haskamat_haboker.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\haskamat_haboker.txt",
+      "size_bytes": 14508,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "kariat_shema_al_hamita.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\kariat_shema_al_hamita.txt",
+      "size_bytes": 14790,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "kiddush_levana.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\kiddush_levana.txt",
+      "size_bytes": 10969,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "maariv_lechol.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\maariv_lechol.txt",
+      "size_bytes": 52139,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "mincha_lechol.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\mincha_lechol.txt",
+      "size_bytes": 72469,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "motzaei_shabbat_basic.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\motzaei_shabbat_basic.txt",
+      "size_bytes": 14425,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "motzaei_shabbat_extended.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\motzaei_shabbat_extended.txt",
+      "size_bytes": 2164,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "rosh_chodesh_and_hallel.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\rosh_chodesh_and_hallel.txt",
+      "size_bytes": 104638,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "sefira.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\sefira.txt",
+      "size_bytes": 15165,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "segulot_and_extra_prayers.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\segulot_and_extra_prayers.txt",
+      "size_bytes": 53261,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "shabbat_eve.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\shabbat_eve.txt",
+      "size_bytes": 60127,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "shabbat_mincha_and_pirkei_avot.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\shabbat_mincha_and_pirkei_avot.txt",
+      "size_bytes": 60058,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "shabbat_shachrit_musaf.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\shabbat_shachrit_musaf.txt",
+      "size_bytes": 227803,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "shachrit_lechol.txt",
+      "path": "yesod_prayers\\nusach_sefarad\\shachrit_lechol.txt",
+      "size_bytes": 257898,
+      "category": "nusach_sefarad"
+    },
+    {
+      "file": "nusach_ashkenaz__מנחה לשבת.txt",
+      "path": "yesod_prayers\\shabbat\\nusach_ashkenaz__מנחה לשבת.txt",
+      "size_bytes": 42895,
+      "category": "shabbat"
+    },
+    {
+      "file": "nusach_ashkenaz_שחרית לשבת.txt",
+      "path": "yesod_prayers\\shabbat\\nusach_ashkenaz_שחרית לשבת.txt",
+      "size_bytes": 230410,
+      "category": "shabbat"
+    },
+    {
+      "file": "nusach_sefarad_shabbat_shachrit_musaf.txt",
+      "path": "yesod_prayers\\shabbat\\nusach_sefarad_shabbat_shachrit_musaf.txt",
+      "size_bytes": 227803,
+      "category": "shabbat"
+    },
+    {
+      "file": "havdalah.txt",
+      "path": "yesod_prayers\\shabbat_prayers\\havdalah.txt",
+      "size_bytes": 137,
+      "category": "shabbat_prayers"
+    },
+    {
+      "file": "kabbalat_shabbat.txt",
+      "path": "yesod_prayers\\shabbat_prayers\\kabbalat_shabbat.txt",
+      "size_bytes": 150,
+      "category": "shabbat_prayers"
+    },
+    {
+      "file": "mincha.txt",
+      "path": "yesod_prayers\\shabbat_prayers\\mincha.txt",
+      "size_bytes": 153,
+      "category": "shabbat_prayers"
+    },
+    {
+      "file": "musaf.txt",
+      "path": "yesod_prayers\\shabbat_prayers\\musaf.txt",
+      "size_bytes": 140,
+      "category": "shabbat_prayers"
+    },
+    {
+      "file": "shacharit.txt",
+      "path": "yesod_prayers\\shabbat_prayers\\shacharit.txt",
+      "size_bytes": 158,
+      "category": "shabbat_prayers"
+    },
+    {
+      "file": "nusach_sefarad_fasts_and_selichot.txt",
+      "path": "yesod_prayers\\special\\nusach_sefarad_fasts_and_selichot.txt",
+      "size_bytes": 579429,
+      "category": "special"
+    },
+    {
+      "file": "nusach_sefarad_kiddush_levana.txt",
+      "path": "yesod_prayers\\special\\nusach_sefarad_kiddush_levana.txt",
+      "size_bytes": 10969,
+      "category": "special"
+    },
+    {
+      "file": "nusach_sefarad_rosh_chodesh_and_hallel.txt",
+      "path": "yesod_prayers\\special\\nusach_sefarad_rosh_chodesh_and_hallel.txt",
+      "size_bytes": 104638,
+      "category": "special"
+    },
+    {
+      "file": "birkat_hachama.txt",
+      "path": "yesod_prayers\\special_prayers\\birkat_hachama.txt",
+      "size_bytes": 150,
+      "category": "special_prayers"
+    },
+    {
+      "file": "hallel.txt",
+      "path": "yesod_prayers\\special_prayers\\hallel.txt",
+      "size_bytes": 131,
+      "category": "special_prayers"
+    },
+    {
+      "file": "kiddush_levana.txt",
+      "path": "yesod_prayers\\special_prayers\\kiddush_levana.txt",
+      "size_bytes": 152,
+      "category": "special_prayers"
+    },
+    {
+      "file": "selichot.txt",
+      "path": "yesod_prayers\\special_prayers\\selichot.txt",
+      "size_bytes": 139,
+      "category": "special_prayers"
+    },
+    {
+      "file": "tefilat_haderech.txt",
+      "path": "yesod_prayers\\special_prayers\\tefilat_haderech.txt",
+      "size_bytes": 154,
+      "category": "special_prayers"
+    }
+  ],
+  "total_files": 88,
+  "categories": {
+    "root": [
+      "tora_content.txt",
+      "tora_page.html",
+      "tora_raw.html",
+      "tora_text.txt",
+      "yesod_prayer_structure.json",
+      "בִּרְכַּת אֲשֶׁר יָצַר.txt",
+      "ברכת המזון לבד סדר רב עמרם.txt",
+      "ברכת לבנה.txt",
+      "ברכת מעין שלוש.txt",
+      "סדר ק_ש על המיטה.txt",
+      "ראש חודש.txt",
+      "שבת.txt",
+      "תפילות וברכות פרטיות.txt",
+      "תפילת מנחה.txt",
+      "תפילת שחרית.txt",
+      "תפלת ערבית לחול ומוצ_ש.txt"
+    ],
+    "daily": [
+      "nusach_ashkenaz__מנחה לשבת.txt",
+      "nusach_ashkenaz_שחרית לשבת.txt",
+      "nusach_ashkenaz_תפילת מנחה.txt",
+      "nusach_edot_mizrach_מנחה לימי החול.txt",
+      "nusach_edot_mizrach_מנחה של שבת.txt",
+      "nusach_edot_mizrach_ערבית לימי החול.txt",
+      "nusach_edot_mizrach_שחרית לחול.txt",
+      "nusach_edot_mizrach_שחרית של שבת.txt",
+      "nusach_sefarad_maariv_lechol.txt",
+      "nusach_sefarad_mincha_lechol.txt",
+      "nusach_sefarad_shabbat_mincha_and_pirkei_avot.txt"
+    ],
+    "daily_prayers": [
+      "maariv.txt",
+      "mincha.txt",
+      "shacharit.txt"
+    ],
+    "hagim": [
+      "nusach_edot_mizrach_חנוכה.txt",
+      "nusach_sefarad_chanukah.txt",
+      "nusach_sefarad_sefira.txt"
+    ],
+    "nusach_ashkenaz": [
+      "_מנחה לשבת.txt",
+      "ברכות.txt",
+      "מעריב.txt",
+      "סידור אשכנז.txt",
+      "ראש חודש.txt",
+      "שבת.txt",
+      "שחרית לשבת.txt",
+      "תפילות לשלוש רגלים.txt",
+      "תפילת מנחה.txt"
+    ],
+    "nusach_edot_mizrach": [
+      "ברכת המזון.txt",
+      "חנוכה.txt",
+      "מוצאי שבת.txt",
+      "מנחה לימי החול.txt",
+      "מנחה של שבת.txt",
+      "סדר הדלקת נרות שבת.txt",
+      "סדר ראש חודש.txt",
+      "ספירת העומר.txt",
+      "ערבית לימי החול.txt",
+      "שחרית לחול.txt",
+      "שחרית של שבת.txt",
+      "תפילה לשלש רגלים.txt"
+    ],
+    "nusach_sefarad": [
+      "berachot_utefilot.txt",
+      "chanukah.txt",
+      "fasts_and_selichot.txt",
+      "festivals_general.txt",
+      "haskamat_haboker.txt",
+      "kariat_shema_al_hamita.txt",
+      "kiddush_levana.txt",
+      "maariv_lechol.txt",
+      "mincha_lechol.txt",
+      "motzaei_shabbat_basic.txt",
+      "motzaei_shabbat_extended.txt",
+      "rosh_chodesh_and_hallel.txt",
+      "sefira.txt",
+      "segulot_and_extra_prayers.txt",
+      "shabbat_eve.txt",
+      "shabbat_mincha_and_pirkei_avot.txt",
+      "shabbat_shachrit_musaf.txt",
+      "shachrit_lechol.txt"
+    ],
+    "shabbat": [
+      "nusach_ashkenaz__מנחה לשבת.txt",
+      "nusach_ashkenaz_שחרית לשבת.txt",
+      "nusach_sefarad_shabbat_shachrit_musaf.txt"
+    ],
+    "shabbat_prayers": [
+      "havdalah.txt",
+      "kabbalat_shabbat.txt",
+      "mincha.txt",
+      "musaf.txt",
+      "shacharit.txt"
+    ],
+    "special": [
+      "nusach_sefarad_fasts_and_selichot.txt",
+      "nusach_sefarad_kiddush_levana.txt",
+      "nusach_sefarad_rosh_chodesh_and_hallel.txt"
+    ],
+    "special_prayers": [
+      "birkat_hachama.txt",
+      "hallel.txt",
+      "kiddush_levana.txt",
+      "selichot.txt",
+      "tefilat_haderech.txt"
+    ]
+  }
+}

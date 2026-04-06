@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  sefria-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sefria-api
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      # Mount data directory for easy updates without rebuilding
+      - ./data:/app/data:ro
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - sefria-network
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '1.0'
+        reservations:
+          memory: 128M
+          cpus: '0.25'
+
+networks:
+  sefria-network:
+    driver: bridge
+
+volumes:
+  sefria-data:
+    driver: local
