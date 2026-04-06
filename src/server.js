@@ -16,6 +16,9 @@ app.use(express.urlencoded({ extended: true }));
 // Data directory - points to project root data/ folder
 const DATA_DIR = path.join(__dirname, '..', 'data');
 
+// Add morgan for logging if possible, or use custom logger
+const log = (msg) => console.log(`[${new Date().toISOString()}] ${msg}`);
+
 // Helper function to read file contents
 function readFileContents(filePath) {
   try {
@@ -43,7 +46,7 @@ function listDirectory(dirPath) {
       return {
         name: item,
         isDirectory: stats.isDirectory(),
-        path: fullPath.replace(DATA_DIR, '').replace(/^[\\/]/, '')
+        path: fullPath.replace(DATA_DIR, '').replace(/^[\\/]/, '').replace(/\\/g, '/')
       };
     });
   } catch (error) {
@@ -103,8 +106,24 @@ app.get('/', (req, res) => {
       'GET /api/prayers/yesod/index': 'Get Yesod prayers complete index',
       'GET /api/prayers/yesod/*path': 'Get specific Yesod prayer file',
       'GET /api/search?q=query': 'Search across all texts',
+      'GET /api/download-all': 'Download complete books.zip bundle for offline mode'
     }
   });
+});
+
+// Bulk Download for Offline Mode
+app.get('/api/download-all', (req, res) => {
+  const zipPath = path.join(DATA_DIR, 'books.zip');
+  
+  if (!fs.existsSync(zipPath)) {
+    return res.status(404).json({ 
+      error: 'Bulk file (books.zip) not found.',
+      tip: 'Run the zip-assets.py script in the project root to generate the bundle.'
+    });
+  }
+
+  log(`Serving bulk download: ${zipPath}`);
+  res.download(zipPath, 'kol_hayom_assets.zip');
 });
 
 // List all book categories
