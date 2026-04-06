@@ -406,7 +406,7 @@ app.get('/api/prayers', (req, res) => {
 
 // Yesod prayers endpoints (must be BEFORE prayers/* wildcard)
 app.get('/api/prayers/yesod', (req, res) => {
-  const yesodPath = path.join(DATA_DIR, 'yesod_prayers');
+  const yesodPath = path.join(DATA_DIR, 'yesod');
   const contents = listDirectory(yesodPath);
   
   // Read metadata if exists
@@ -414,7 +414,7 @@ app.get('/api/prayers/yesod', (req, res) => {
   const metadata = readFileContents(metadataPath);
   
   res.json({
-    category: 'yesod_prayers',
+    category: 'yesod',
     description: 'Yesod nusach prayers - comprehensive collection organized by category and nusach',
     source: 'Compiled from mobile.tora.ws and traditional siddurim',
     metadata: metadata ? JSON.parse(metadata) : null,
@@ -424,7 +424,7 @@ app.get('/api/prayers/yesod', (req, res) => {
 
 // Yesod prayers metadata endpoint
 app.get('/api/prayers/yesod/metadata', (req, res) => {
-  const metadataPath = path.join(DATA_DIR, 'yesod_prayers', 'metadata.json');
+  const metadataPath = path.join(DATA_DIR, 'yesod', 'metadata.json');
   const metadata = readFileContents(metadataPath);
   
   if (!metadata) {
@@ -432,14 +432,14 @@ app.get('/api/prayers/yesod/metadata', (req, res) => {
   }
   
   res.json({
-    category: 'yesod_prayers',
+    category: 'yesod',
     metadata: JSON.parse(metadata)
   });
 });
 
 // Yesod prayers index endpoint
 app.get('/api/prayers/yesod/index', (req, res) => {
-  const indexPath = path.join(DATA_DIR, 'yesod_prayers', 'index.json');
+  const indexPath = path.join(DATA_DIR, 'yesod', 'index.json');
   const index = readFileContents(indexPath);
   
   if (!index) {
@@ -452,9 +452,9 @@ app.get('/api/prayers/yesod/index', (req, res) => {
 // Yesod prayers file access endpoint
 app.get('/api/prayers/yesod/*', (req, res) => {
   const filePath = req.params[0];
-  const fullPath = path.join(DATA_DIR, 'yesod_prayers', filePath);
+  const fullPath = path.join(DATA_DIR, 'yesod', filePath);
 
-  if (!fullPath.startsWith(path.join(DATA_DIR, 'yesod_prayers'))) {
+  if (!fullPath.startsWith(path.join(DATA_DIR, 'yesod'))) {
     return res.status(403).json({ error: 'Access denied' });
   }
 
