@@ -240,7 +240,7 @@ app.get('/api/tanach/*', (req, res) => {
 
   if (!fullPath) return res.status(404).json({ error: `File not found: ${filePath}` });
   if (fs.statSync(fullPath).isDirectory()) return res.json({ path: filePath, type: 'directory', contents: listDirectory(fullPath) });
-  res.json({ path: filePath, content: readFileContents(fullPath) });
+  res.send(readFileContents(fullPath));
 });
 
 app.get('/api/mishna/*', (req, res) => {
@@ -249,7 +249,7 @@ app.get('/api/mishna/*', (req, res) => {
   if (!fullPath.startsWith(path.join(DATA_DIR, 'mishna'))) return res.status(403).json({ error: 'Access denied' });
   if (!fs.existsSync(fullPath)) return res.status(404).json({ error: `File not found: ${filePath}` });
   if (fs.statSync(fullPath).isDirectory()) return res.json({ path: filePath, type: 'directory', contents: listDirectory(fullPath) });
-  res.json({ path: filePath, content: readFileContents(fullPath) });
+  res.send(readFileContents(fullPath));
 });
 
 app.get('/api/gemara/*', (req, res) => {
@@ -258,7 +258,7 @@ app.get('/api/gemara/*', (req, res) => {
 
   if (!fullPath) return res.status(404).json({ error: `File not found: ${filePath}` });
   if (fs.statSync(fullPath).isDirectory()) return res.json({ path: filePath, type: 'directory', contents: listDirectory(fullPath) });
-  res.json({ path: filePath, content: readFileContents(fullPath) });
+  res.send(readFileContents(fullPath));
 });
 
 app.get('/api/prayers/yesod/*', (req, res) => {
@@ -272,13 +272,32 @@ app.get('/api/prayers/yesod/*', (req, res) => {
   res.json({ path: filePath, type: 'text', content });
 });
 
+const NUSACH_REDIRECTS = {
+  'siddur_ashkenaz': 'yesod/סידור/סידור נוסח אשכנז',
+  'siddur_edot_hamizrach': 'yesod/סידור/סידור נוסח הספרדים ובני עדות המזרח',
+  'siddur_sefarad': 'yesod/סידור/סידור נוסח ספרד (מנהג האשכנזים)'
+};
+
 app.get('/api/prayers/*', (req, res) => {
-  const filePath = req.params[0];
-  const fullPath = resolvePathFuzzy(path.join(DATA_DIR, 'prayers'), filePath);
+  let filePath = req.params[0];
+  
+  // Intercept the request and route custom nusachs to the yesod folder
+  let baseFolder = 'prayers';
+  for (const [key, dest] of Object.entries(NUSACH_REDIRECTS)) {
+    if (filePath.startsWith(key)) {
+      filePath = filePath.replace(key, dest);
+      baseFolder = ''; // Because destination is already fully qualified from DATA_DIR
+      break;
+    }
+  }
+
+  const fullPath = resolvePathFuzzy(path.join(DATA_DIR, baseFolder), filePath);
 
   if (!fullPath) return res.status(404).json({ error: `File not found: ${filePath}` });
   if (fs.statSync(fullPath).isDirectory()) return res.json({ path: filePath, type: 'directory', contents: listDirectory(fullPath) });
-  res.json({ path: filePath, content: readFileContents(fullPath) });
+  
+  // Return purely raw text, dropping the JSON wrapper to ensure compatibility with Flutter AssetService
+  res.send(readFileContents(fullPath));
 });
 
 app.get('/api/search', (req, res) => {
