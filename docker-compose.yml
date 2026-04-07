@@ -31,9 +31,10 @@ services:
       - ./zrok-state:/tmp/zrok
     environment:
       - HOME=/tmp/zrok
+      - ZROK_ENABLE_TOKEN=0hD9JBznYqUN
     user: root
     entrypoint: sh
-    command: -c "zrok enable 0hD9JBznYqUN && zrok share reserved kolhayom613 --headless"
+    command: -c "zrok enable $$ZROK_ENABLE_TOKEN && zrok share reserved kolhayom613 --headless"
     restart: unless-stopped
     depends_on:
       - sefria-api
