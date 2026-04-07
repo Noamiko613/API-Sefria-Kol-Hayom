@@ -34,7 +34,7 @@ services:
       - ZROK_ENABLE_TOKEN=0hD9JBznYqUN
     user: root
     entrypoint: sh
-    command: -c "zrok enable $$ZROK_ENABLE_TOKEN || true; zrok share reserved kolhayom613 --headless"
+    command: -c "zrok enable $$ZROK_ENABLE_TOKEN || true; (zrok share reserved kolhayom-final --headless || (zrok reserve public http://localhost:3000 --unique-name kolhayom-final && zrok share reserved kolhayom-final --headless))"
     restart: unless-stopped
     depends_on:
       - sefria-api
