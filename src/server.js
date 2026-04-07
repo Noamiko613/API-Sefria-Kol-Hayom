@@ -57,16 +57,31 @@ function listDirectory(dirPath) {
   }
 }
 
+const NUSACH_REDIRECTS = {
+  'siddur_ashkenaz': 'yesod/סידור/סידור נוסח אשכנז',
+  'siddur_edot_hamizrach': 'yesod/סידור/סידור נוסח הספרדים ובני עדות המזרח',
+  'siddur_sefarad': 'yesod/סידור/סידור נוסח ספרד (מנהג האשכנזים)',
+  'siddur_rav_amram': 'prayers/siddur rav amram',
+  'seder_rav_amram': 'prayers/siddur rav amram',
+  'siddur_teiman': 'yesod/סידור/סידור נוסח תימן'
+};
+
 function resolvePathFuzzy(base, rel) {
   let current = base;
   const parts = decodeURIComponent(rel).split('/').filter(Boolean);
   
   const HEBREW_MAP = {
-    shacharit: 'תפילת שחרית',
-    mincha: 'תפילת מנחה',
-    arvit: 'תפלת ערבית לחול ומוצ_ש',
-    birkat_hamazon: 'ברכת המזון לבד סדר רב עמרם',
+    shacharit: 'שחרית',
+    mincha: 'מנחה',
+    arvit: 'מעריב',
+    arvit_chol: 'תפילת ערבית לימי החול',
+    mincha_chol: 'תפילת מנחה לימי החול',
+    shacharit_chol: 'תפילת שחרית לימות החול',
+    shacharit_lechol: 'תפילת שחרית לימי החול',
+    birkat_hamazon: 'ברכות',
     tehillim: 'תהילים',
+    kriat_shema: 'קריאת שמע',
+    hallel: 'הלל'
   };
 
   for (const part of parts) {
@@ -89,7 +104,7 @@ function resolvePathFuzzy(base, rel) {
       const match = items.find(i => {
         const il = i.toLowerCase();
         return il === partLower || il === spacedLower || il.includes(spacedLower) || il.includes(partLower) ||
-               (mapped && (il.includes(mapped) || il === mapped));
+               (mapped && (il.includes(mapped) || il === mapped || mapped.includes(il)));
       });
       if (match) {
         current = path.join(current, match);
@@ -271,11 +286,6 @@ app.get('/api/gemara/*', (req, res) => {
   res.send(readFileContents(fullPath));
 });
 
-const NUSACH_REDIRECTS = {
-  'siddur_ashkenaz': 'yesod/סידור/סידור נוסח אשכנז',
-  'siddur_edot_hamizrach': 'yesod/סידור/סידור נוסח הספרדים ובני עדות המזרח',
-  'siddur_sefarad': 'yesod/סידור/סידור נוסח ספרד (מנהג האשכנזים)'
-};
 
 app.get('/api/prayers/*', (req, res) => {
   let filePath = req.params[0];
