@@ -298,10 +298,29 @@ app.get('/api/books/:category/*', (req, res) => {
 app.get('/api/tanach/*', (req, res) => {
   const filePath = req.params[0] || '';
   log(`Tanach Request: ${filePath}`);
-  const fullPath = resolvePathFuzzy(path.join(DATA_DIR, 'tanach'), filePath);
+  
+  let fullPath = resolvePathFuzzy(path.join(DATA_DIR, 'tanach'), filePath);
 
-  if (!fullPath) return res.status(404).json({ error: `File not found: ${filePath}` });
+  // Fallback for Tanach: if chapter file not found (e.g. VAIKRA/9), look in the book folder for ANY .txt file
+  if (!fullPath || !fs.existsSync(fullPath) || fs.statSync(fullPath).isDirectory()) {
+    const parts = filePath.split('/');
+    if (parts.length >= 2) {
+      const bookPath = resolvePathFuzzy(path.join(DATA_DIR, 'tanach'), parts[0]);
+      if (bookPath && fs.statSync(bookPath).isDirectory()) {
+         const files = fs.readdirSync(bookPath);
+         // Find a file that looks like a main text file (starts with a, b, e, or Hebrew names)
+         const bookFile = files.find(f => f.endsWith('.txt') && (f.startsWith('a') || f.startsWith('b') || f.startsWith('e')));
+         if (bookFile) {
+            fullPath = path.join(bookPath, bookFile);
+            log(`[TANACH FALLBACK] Using book file: ${fullPath}`);
+         }
+      }
+    }
+  }
+
+  if (!fullPath || !fs.existsSync(fullPath)) return res.status(404).json({ error: `File not found: ${filePath}` });
   if (fs.statSync(fullPath).isDirectory()) return res.json({ path: filePath, type: 'directory', contents: listDirectory(fullPath) });
+  
   res.send(readFileContents(fullPath));
 });
 
