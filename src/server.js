@@ -58,65 +58,69 @@ function listDirectory(dirPath) {
 }
 
 const NUSACH_REDIRECTS = {
-  'siddur_ashkenaz': 'yesod/סידור/סידור נוסח אשכנז',
-  'siddur_edot_hamizrach': 'yesod/סידור/סידור נוסח הספרדים ובני עדות המזרח',
-  'siddur_sefarad': 'yesod/סידור/סידור נוסח ספרד (מנהג האשכנזים)',
+  'siddur_ashkenaz': 'prayers/siddur ashkenaz',
+  'siddur_edot_hamizrach': 'prayers/siddur edot hamizrach',
+  'siddur_sefarad': 'prayers/siddur sefarad',
   'siddur_rav_amram': 'prayers/siddur rav amram',
   'seder_rav_amram': 'prayers/siddur rav amram',
-  'siddur_teiman': 'yesod/סידור/סידור נוסח תימן'
+  'siddur_teiman': 'prayers/siddur teiman'
 };
 
-function resolvePathFuzzy(base, rel) {
-  let current = base;
+const FILENAME_OVERRIDE = {
+  'bereshit': 'BERESHIT', 'genesis': 'BERESHIT',
+  'shmot': 'SHEMOT', 'exodus': 'SHEMOT',
+  'vaikra': 'VAIKRA', 'leviticus': 'VAIKRA',
+  'bamidbar': 'BAMIDBAR', 'numbers': 'BAMIDBAR',
+  'devarim': 'DEVARIM', 'deuteronomy': 'DEVARIM',
+};
+
+function resolvePathFuzzy(dir, rel) {
+  if (!rel) return dir;
   const parts = decodeURIComponent(rel).split('/').filter(Boolean);
   
   const HEBREW_MAP = {
-    shacharit: 'שחרית',
-    mincha: 'מנחה',
-    arvit: 'ערבית',
-    maariv: 'מעריב',
-    arvit_chol: 'תפילת ערבית לימי החול',
-    mincha_chol: 'תפילת מנחה לימי החול',
-    shacharit_chol: 'תפילת שחרית לימות החול',
-    shacharit_lechol: 'תפילת שחרית לימי החול',
-    birkat_hamazon: 'ברכות',
-    tehillim: 'תהילים',
-    kriat_shema: 'קריאת שמע',
-    hallel: 'הלל',
-    seder_kriat_shema: 'סדר ק_ש',
-    birkat_hamazon_seder: 'ברכת המזון לבד סדר רב עמרם'
+    shacharit: 'שחרית', mincha: 'מנחה', arvit: 'ערבית', maariv: 'מעריב',
+    arvit_chol: 'תפילת ערבית לימי החול', mincha_chol: 'תפילת מנחה לימי החול',
+    shacharit_chol: 'תפילת שחרית לימות החול', shacharit_lechol: 'תפילת שחרית לימי החול',
+    birkat_hamazon: 'ברכות', tehillim: 'תהילים', kriat_shema: 'קריאת שמע', hallel: 'הלל',
+    seder_kriat_shema: 'סדר ק_ש', birkat_hamazon_seder: 'ברכת המזון לבד סדר רב עמרם'
   };
 
-  for (const part of parts) {
-    if (fs.existsSync(path.join(current, part))) {
-      current = path.join(current, part);
-      continue;
+  /** Recursive search for a single path segment in a directory */
+  function findPart(currentDir, part) {
+    if (!fs.existsSync(currentDir)) return null;
+    const items = fs.readdirSync(currentDir);
+    const lowPart = part.toLowerCase();
+    const cleanPart = lowPart.replace('.txt','').replace('.json','');
+    const mapped = (HEBREW_MAP[cleanPart] || FILENAME_OVERRIDE[cleanPart] || part).toUpperCase();
+
+    // 1. Direct check
+    if (items.includes(part)) return path.join(currentDir, part);
+    
+    // 2. Fuzzy match at current level
+    const match = items.find(i => {
+       const il = i.toUpperCase();
+       return il === mapped || il.includes(mapped) || mapped.includes(il) || il.includes(part.toUpperCase());
+    });
+    if (match) return path.join(currentDir, match);
+
+    // 3. Recursive search (Deep dive)
+    for (const item of items) {
+       const sub = path.join(currentDir, item);
+       if (fs.statSync(sub).isDirectory()) {
+          const deep = findPart(sub, part);
+          if (deep) return deep;
+       }
     }
-    const spacedPart = part.replace(/_/g, ' ');
-    if (fs.existsSync(path.join(current, spacedPart))) {
-      current = path.join(current, spacedPart);
-      continue;
-    }
-    try {
-      const items = fs.readdirSync(current);
-      const partLower = part.toLowerCase();
-      const spacedLower = spacedPart.toLowerCase();
-      const partNoExt = partLower.replace('.txt', '').replace('.json', '');
-      const mapped = HEBREW_MAP[partNoExt];
-      
-      const match = items.find(i => {
-        const il = i.toLowerCase();
-        return il === partLower || il === spacedLower || il.includes(spacedLower) || il.includes(partLower) ||
-               (mapped && (il.includes(mapped) || il === mapped || mapped.includes(il)));
-      });
-      if (match) {
-        current = path.join(current, match);
-      } else {
-        return null;
-      }
-    } catch (_) { return null; }
+    return null;
   }
-  return current;
+
+  let resolved = dir;
+  for (const part of parts) {
+    resolved = findPart(resolved, part);
+    if (!resolved) return null;
+  }
+  return resolved;
 }
 
 function getAllFiles(dirPath, baseDir = dirPath) {
