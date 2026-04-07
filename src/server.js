@@ -306,7 +306,13 @@ app.get('/api/prayers/*', (req, res) => {
     }
   }
 
-  const fullPath = resolvePathFuzzy(path.join(DATA_DIR, baseFolder), filePath);
+  let fullPath = resolvePathFuzzy(path.join(DATA_DIR, baseFolder), filePath);
+
+  // High-performance fallback: If the file wasn't found in the base prayers folder, 
+  // try the "Seder Rav Amram" folder automatically (as it is our primary default).
+  if (!fullPath && baseFolder === 'prayers') {
+    fullPath = resolvePathFuzzy(path.join(DATA_DIR, 'prayers', 'siddur rav amram'), filePath);
+  }
 
   if (!fullPath) return res.status(404).json({ error: `File not found: ${filePath}` });
   if (fs.statSync(fullPath).isDirectory()) return res.json({ path: filePath, type: 'directory', contents: listDirectory(fullPath) });
