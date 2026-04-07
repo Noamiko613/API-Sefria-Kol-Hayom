@@ -27,11 +27,13 @@ services:
     container_name: sefria-zrok
     # We join the API's network namespace so 'localhost:3000' routes directly to the API container
     network_mode: "service:sefria-api"
+    volumes:
+      - ./zrok-state:/tmp/zrok
     environment:
       - HOME=/tmp/zrok
     user: root
     entrypoint: sh
-    command: -c "zrok enable 0hD9JBznYqUN && zrok share public http://localhost:3000 --headless"
+    command: -c "zrok enable 0hD9JBznYqUN && zrok share reserved kolhayom613 --headless"
     restart: unless-stopped
     depends_on:
       - sefria-api

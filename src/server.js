@@ -24,6 +24,17 @@ const log = (msg) => console.log(`[${new Date().toISOString()}] ${msg}`);
 // Request logging middleware
 app.use((req, res, next) => {
   log(`${req.method} ${req.url}`);
+  
+  // Special mapping for Yesod prayers which are in /data/yesod/ but requested as /api/prayers/yesod/
+  if (req.url.startsWith('/api/prayers/yesod/')) {
+    const yesodPath = req.url.replace('/api/prayers/yesod/', '');
+    const fullPath = path.join(DATA_DIR, 'yesod', yesodPath);
+    if (fs.existsSync(fullPath)) {
+      log(`[YESOD MATCH] Serving ${fullPath}`);
+      return res.sendFile(fullPath);
+    }
+  }
+
   next();
 });
 
