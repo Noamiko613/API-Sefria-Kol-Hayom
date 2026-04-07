@@ -21,13 +21,12 @@ services:
     networks:
       - sefria-network
 
-  # EXPOSE YOUR API WORLDWIDE WITH CLOUDFLARE
+  # EXPOSE YOUR API WORLDWIDE WITH INSTATUNNEL (FREE STATIC SUBDOMAIN)
   tunnel:
-    image: cloudflare/cloudflared:latest
+    image: node:20-alpine
     container_name: sefria-tunnel
-    command: tunnel --no-autoupdate run
-    environment:
-      - TUNNEL_TOKEN=${TUNNEL_TOKEN}
+    # Command forwards traffic from the public URL to our local 'sefria-api' container
+    command: npx -y instatunnel@latest --name ${TUNNEL_NAME:-kolhayom-siddur-api} --port 3000 --local-host sefria-api
     restart: unless-stopped
     depends_on:
       - sefria-api
