@@ -57,11 +57,18 @@ function listDirectory(dirPath) {
   }
 }
 
-// Helper to resolve paths even with underscores vs spaces or slight differences
 function resolvePathFuzzy(base, rel) {
   let current = base;
   const parts = decodeURIComponent(rel).split('/').filter(Boolean);
   
+  const HEBREW_MAP = {
+    shacharit: 'תפילת שחרית',
+    mincha: 'תפילת מנחה',
+    arvit: 'תפלת ערבית לחול ומוצ_ש',
+    birkat_hamazon: 'ברכת המזון לבד סדר רב עמרם',
+    tehillim: 'תהילים',
+  };
+
   for (const part of parts) {
     if (fs.existsSync(path.join(current, part))) {
       current = path.join(current, part);
@@ -76,10 +83,13 @@ function resolvePathFuzzy(base, rel) {
       const items = fs.readdirSync(current);
       const partLower = part.toLowerCase();
       const spacedLower = spacedPart.toLowerCase();
+      const partNoExt = partLower.replace('.txt', '').replace('.json', '');
+      const mapped = HEBREW_MAP[partNoExt];
       
       const match = items.find(i => {
         const il = i.toLowerCase();
-        return il === partLower || il === spacedLower || il.includes(spacedLower) || il.includes(partLower);
+        return il === partLower || il === spacedLower || il.includes(spacedLower) || il.includes(partLower) ||
+               (mapped && (il.includes(mapped) || il === mapped));
       });
       if (match) {
         current = path.join(current, match);
