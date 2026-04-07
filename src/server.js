@@ -73,7 +73,8 @@ function resolvePathFuzzy(base, rel) {
   const HEBREW_MAP = {
     shacharit: 'שחרית',
     mincha: 'מנחה',
-    arvit: 'מעריב',
+    arvit: 'ערבית',
+    maariv: 'מעריב',
     arvit_chol: 'תפילת ערבית לימי החול',
     mincha_chol: 'תפילת מנחה לימי החול',
     shacharit_chol: 'תפילת שחרית לימות החול',
@@ -81,7 +82,9 @@ function resolvePathFuzzy(base, rel) {
     birkat_hamazon: 'ברכות',
     tehillim: 'תהילים',
     kriat_shema: 'קריאת שמע',
-    hallel: 'הלל'
+    hallel: 'הלל',
+    seder_kriat_shema: 'סדר ק_ש',
+    birkat_hamazon_seder: 'ברכת המזון לבד סדר רב עמרם'
   };
 
   for (const part of parts) {
