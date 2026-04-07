@@ -21,15 +21,17 @@ services:
     networks:
       - sefria-network
 
-  # EXPOSE YOUR API WORLDWIDE WITH INSTATUNNEL (FREE STATIC SUBDOMAIN)
-  tunnel:
-    image: node:20-alpine
-    container_name: sefria-tunnel
+  # EXPOSE YOUR API WORLDWIDE WITH ZROK (STABLE TUNNEL)
+  zrok:
+    image: openziti/zrok
+    container_name: sefria-zrok
     # We join the API's network namespace so 'localhost:3000' routes directly to the API container
     network_mode: "service:sefria-api"
-    # The correct syntax for instatunnel is 'tunnel [port] -s [subdomain]'
-    # We hardcode the subdomain to avoid PowerShell interpolation errors on the Mini PC
-    command: npx -y instatunnel@latest tunnel 3000 -s kolhayom-613-v4 --api-key ${INSTATUNNEL_KEY:-""}
+    environment:
+      - HOME=/tmp/zrok
+    user: root
+    entrypoint: sh
+    command: -c "zrok enable 0hD9JBznYqUN && zrok share public http://localhost:3000 --headless"
     restart: unless-stopped
     depends_on:
       - sefria-api

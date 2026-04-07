@@ -21,6 +21,12 @@ const DATA_DIR = process.env.DATA_DIR
 // Add morgan for logging if possible, or use custom logger
 const log = (msg) => console.log(`[${new Date().toISOString()}] ${msg}`);
 
+// Request logging middleware
+app.use((req, res, next) => {
+  log(`${req.method} ${req.url}`);
+  next();
+});
+
 // Helper function to read file contents
 function readFileContents(filePath) {
   try {
@@ -232,6 +238,7 @@ app.get('/text/:book/:chapter', (req, res) => {
 
 app.get(['/download', '/download/:category'], (req, res) => {
   const category = req.params.category;
+  log(`Download Request: ${category || 'bulk'}`);
   if (!category) {
     const bulkPath = path.join(DATA_DIR, 'books.zip');
     if (fs.existsSync(bulkPath)) return res.download(bulkPath);
@@ -268,6 +275,7 @@ app.get('/api/books/:category/*', (req, res) => {
 
 app.get('/api/tanach/*', (req, res) => {
   const filePath = req.params[0] || '';
+  log(`Tanach Request: ${filePath}`);
   const fullPath = resolvePathFuzzy(path.join(DATA_DIR, 'tanach'), filePath);
 
   if (!fullPath) return res.status(404).json({ error: `File not found: ${filePath}` });
@@ -277,6 +285,7 @@ app.get('/api/tanach/*', (req, res) => {
 
 app.get('/api/mishna/*', (req, res) => {
   const filePath = req.params[0];
+  log(`Mishna Request: ${filePath}`);
   const fullPath = path.join(DATA_DIR, 'mishna', filePath);
   if (!fullPath.startsWith(path.join(DATA_DIR, 'mishna'))) return res.status(403).json({ error: 'Access denied' });
   if (!fs.existsSync(fullPath)) return res.status(404).json({ error: `File not found: ${filePath}` });
@@ -286,6 +295,7 @@ app.get('/api/mishna/*', (req, res) => {
 
 app.get('/api/gemara/*', (req, res) => {
   const filePath = req.params[0];
+  log(`Gemara Request: ${filePath}`);
   const fullPath = resolvePathFuzzy(path.join(DATA_DIR, 'gemara'), filePath);
 
   if (!fullPath) return res.status(404).json({ error: `File not found: ${filePath}` });
