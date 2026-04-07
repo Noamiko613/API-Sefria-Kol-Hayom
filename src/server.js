@@ -90,11 +90,22 @@ function resolvePathFuzzy(dir, rel) {
   };
 
   const FILENAME_OVERRIDE = {
-    'bereshit': 'BERESHIT', 'genesis': 'BERESHIT',
-    'shmot': 'SHEMOT', 'exodus': 'SHEMOT',
-    'vaikra': 'VAIKRA', 'leviticus': 'VAIKRA',
-    'bamidbar': 'BAMIDBAR', 'numbers': 'BAMIDBAR',
-    'devarim': 'DEVARIM', 'deuteronomy': 'DEVARIM',
+    bereshit: 'BERESHIT', genesis: 'BERESHIT', 'בראשית': 'BERESHIT',
+    shmot: 'SHEMOT', exodus: 'SHEMOT', 'שמות': 'SHEMOT',
+    vaikra: 'VAIKRA', leviticus: 'VAIKRA', 'ויקרא': 'VAIKRA',
+    bamidbar: 'BAMIDBAR', numbers: 'BAMIDBAR', 'במדבר': 'BAMIDBAR',
+    devarim: 'DEVARIM', deuteronomy: 'DEVARIM', 'דברים': 'DEVARIM',
+    yehoshua: 'YEHOSHUA', joshua: 'YEHOSHUA', 'יהושע': 'YEHOSHUA',
+    shoftim: 'SHOFTIM', judges: 'SHOFTIM', 'שופטים': 'SHOFTIM',
+    'shemuel_a': 'SHEMUEL_A', 'samuel_1': 'SHEMUEL_A', 'שמואל א': 'SHEMUEL_A',
+    'shemuel_b': 'SHEMUEL_B', 'samuel_2': 'SHEMUEL_B', 'שמואל ב': 'SHEMUEL_B',
+    'melakhim_a': 'MELAKHIM_A', 'kings_1': 'MELAKHIM_A', 'מלכים א': 'MELAKHIM_A',
+    'melakhim_b': 'MELAKHIM_B', 'kings_2': 'MELAKHIM_B', 'מלכים ב': 'MELAKHIM_B',
+    'yeshayahu': 'YESHAYAHU', isaiah: 'YESHAYAHU', 'ישעיהו': 'YESHAYAHU',
+    'yirmeyahu': 'YIRMEYAHU', jeremiah: 'YIRMEYAHU', 'ירמיהו': 'YIRMEYAHU',
+    'yekhezkel': 'YEKHEZKEL', ezekiel: 'YEKHEZKEL', 'יחזקאל': 'YEKHEZKEL',
+    'tehillim': 'תהילים', psalms: 'תהילים', 'תהילים': 'תהילים',
+    'mishlei': 'proverbs', proverbs: 'proverbs', 'משלי': 'proverbs',
   };
 
   let current = dir;
