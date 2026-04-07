@@ -271,17 +271,6 @@ app.get('/api/gemara/*', (req, res) => {
   res.send(readFileContents(fullPath));
 });
 
-app.get('/api/prayers/yesod/*', (req, res) => {
-  const filePath = req.params[0];
-  const fullPath = path.join(DATA_DIR, 'yesod', filePath);
-  if (!fullPath.startsWith(path.join(DATA_DIR, 'yesod'))) return res.status(403).json({ error: 'Access denied' });
-  if (!fs.existsSync(fullPath)) return res.status(404).json({ error: `File not found: ${filePath}` });
-  if (fs.statSync(fullPath).isDirectory()) return res.json({ path: filePath, type: 'directory', contents: listDirectory(fullPath) });
-  const content = readFileContents(fullPath);
-  if (path.extname(fullPath).toLowerCase() === '.json') return res.json({ path: filePath, type: 'json', data: JSON.parse(content) });
-  res.json({ path: filePath, type: 'text', content });
-});
-
 const NUSACH_REDIRECTS = {
   'siddur_ashkenaz': 'yesod/סידור/סידור נוסח אשכנז',
   'siddur_edot_hamizrach': 'yesod/סידור/סידור נוסח הספרדים ובני עדות המזרח',
@@ -293,11 +282,17 @@ app.get('/api/prayers/*', (req, res) => {
   
   // Intercept the request and route custom nusachs to the yesod folder
   let baseFolder = 'prayers';
-  for (const [key, dest] of Object.entries(NUSACH_REDIRECTS)) {
-    if (filePath.startsWith(key)) {
-      filePath = filePath.replace(key, dest);
-      baseFolder = ''; // Because destination is already fully qualified from DATA_DIR
-      break;
+  
+  // If the path already has 'yesod/' in it (from the app), we clear the base folder and use it as-is
+  if (filePath.startsWith('yesod/')) {
+    baseFolder = '';
+  } else {
+    for (const [key, dest] of Object.entries(NUSACH_REDIRECTS)) {
+      if (filePath.startsWith(key)) {
+        filePath = filePath.replace(key, dest);
+        baseFolder = ''; // Because destination is already fully qualified from DATA_DIR
+        break;
+      }
     }
   }
 
@@ -306,7 +301,7 @@ app.get('/api/prayers/*', (req, res) => {
   if (!fullPath) return res.status(404).json({ error: `File not found: ${filePath}` });
   if (fs.statSync(fullPath).isDirectory()) return res.json({ path: filePath, type: 'directory', contents: listDirectory(fullPath) });
   
-  // Return purely raw text, dropping the JSON wrapper to ensure compatibility with Flutter AssetService
+  // Return purely raw text, dropping the JSON wrapper to ensure compatibility with Flutter Assistant
   res.send(readFileContents(fullPath));
 });
 
