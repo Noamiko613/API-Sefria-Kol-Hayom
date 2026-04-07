@@ -66,12 +66,9 @@ const NUSACH_REDIRECTS = {
   'siddur_teiman': 'prayers/siddur teiman'
 };
 
-const FILENAME_OVERRIDE = {
-  'bereshit': 'BERESHIT', 'genesis': 'BERESHIT',
-  'shmot': 'SHEMOT', 'exodus': 'SHEMOT',
-  'vaikra': 'VAIKRA', 'leviticus': 'VAIKRA',
-  'bamidbar': 'BAMIDBAR', 'numbers': 'BAMIDBAR',
-  'devarim': 'DEVARIM', 'deuteronomy': 'DEVARIM',
+const CATEGORY_MAP = {
+  'tanach': ['TORA', 'NAVI', 'KETUVIM'],
+  'mishna': ['100_SEDER_ZRAIM', '101_SEDER_MOED', '102_SEDER_NASHIM', '103_SEDER_NEZIKIN', '104_SEDER_KADASHIM', '105_SEDER_TAHAROT'],
 };
 
 function resolvePathFuzzy(dir, rel) {
@@ -86,41 +83,44 @@ function resolvePathFuzzy(dir, rel) {
     seder_kriat_shema: 'סדר ק_ש', birkat_hamazon_seder: 'ברכת המזון לבד סדר רב עמרם'
   };
 
-  /** Recursive search for a single path segment in a directory */
-  function findPart(currentDir, part) {
-    if (!fs.existsSync(currentDir)) return null;
-    const items = fs.readdirSync(currentDir);
+  const FILENAME_OVERRIDE = {
+    'bereshit': 'BERESHIT', 'genesis': 'BERESHIT',
+    'shmot': 'SHEMOT', 'exodus': 'SHEMOT',
+    'vaikra': 'VAIKRA', 'leviticus': 'VAIKRA',
+    'bamidbar': 'BAMIDBAR', 'numbers': 'BAMIDBAR',
+    'devarim': 'DEVARIM', 'deuteronomy': 'DEVARIM',
+  };
+
+  let current = dir;
+  for (const part of parts) {
+    if (!fs.existsSync(current)) return null;
+    const items = fs.readdirSync(current);
     const lowPart = part.toLowerCase();
     const cleanPart = lowPart.replace('.txt','').replace('.json','');
     const mapped = (HEBREW_MAP[cleanPart] || FILENAME_OVERRIDE[cleanPart] || part).toUpperCase();
 
-    // 1. Direct check
-    if (items.includes(part)) return path.join(currentDir, part);
-    
-    // 2. Fuzzy match at current level
-    const match = items.find(i => {
+    // 1. Direct or Shallow Fuzzy check
+    let match = items.find(i => {
        const il = i.toUpperCase();
-       return il === mapped || il.includes(mapped) || mapped.includes(il) || il.includes(part.toUpperCase());
+       return il === part.toUpperCase() || il === mapped || il.includes(mapped) || mapped.includes(il);
     });
-    if (match) return path.join(currentDir, match);
 
-    // 3. Recursive search (Deep dive)
-    for (const item of items) {
-       const sub = path.join(currentDir, item);
-       if (fs.statSync(sub).isDirectory()) {
-          const deep = findPart(sub, part);
-          if (deep) return deep;
-       }
+    if (match) {
+      current = path.join(current, match);
+    } else {
+      // 2. Performance: Only dive into categories for the first segment
+      const categories = CATEGORY_MAP[path.basename(current).toLowerCase()];
+      if (categories) {
+         for (const cat of categories) {
+            const sub = path.join(current, cat);
+            const subMatch = resolvePathFuzzy(sub, part);
+            if (subMatch) { return subMatch; }
+         }
+      }
+      return null;
     }
-    return null;
   }
-
-  let resolved = dir;
-  for (const part of parts) {
-    resolved = findPart(resolved, part);
-    if (!resolved) return null;
-  }
-  return resolved;
+  return current;
 }
 
 function getAllFiles(dirPath, baseDir = dirPath) {
