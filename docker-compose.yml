@@ -29,7 +29,7 @@ services:
     network_mode: "service:sefria-api"
     # The correct syntax for instatunnel is 'tunnel [port] -s [subdomain]'
     # We hardcode the subdomain to avoid PowerShell interpolation errors on the Mini PC
-    command: npx -y instatunnel@latest tunnel 3000 -s kolhayom-siddur-api-v3 --api-key ${INSTATUNNEL_KEY:-""}
+    command: npx -y instatunnel@latest tunnel 3000 -s kolhayom613-dev --api-key ${INSTATUNNEL_KEY:-""}
     restart: unless-stopped
     depends_on:
       - sefria-api
