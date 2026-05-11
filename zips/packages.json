@@ -1,6 +1,18 @@
 {
   "categories": [
     {
+      "id": "full_library",
+      "name": "כל הספרייה",
+      "packages": [
+        {
+          "id": "full_library_zip",
+          "name": "הורד את כל הספרייה (תנ\"ך, משנה, גמרא, הלכה ומפרשים)",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/everything.zip",
+          "size": "מחשב..."
+        }
+      ]
+    },
+    {
       "id": "torah",
       "name": "תורה",
       "packages": [
