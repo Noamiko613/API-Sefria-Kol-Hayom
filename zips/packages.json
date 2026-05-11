@@ -5,6 +5,12 @@
       "name": "תורה",
       "packages": [
         {
+          "id": "torah_shnayim_mikra",
+          "name": "שניים מקרא (בסיס + רש\"י + אונקלוס)",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_shnayim_mikra.zip",
+          "size": "3263 KB"
+        },
+        {
           "id": "torah_base",
           "name": "טקסט בסיס - תורה",
           "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_base.zip",
@@ -20,13 +26,13 @@
           "id": "torah_ramban",
           "name": "רמב\"ן על תורה",
           "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_ramban.zip",
-          "size": "46 KB"
+          "size": "192 KB"
         },
         {
           "id": "torah_ibn_ezra",
           "name": "אבן עזרא על תורה",
           "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_ibn_ezra.zip",
-          "size": "264 KB"
+          "size": "223 KB"
         },
         {
           "id": "torah_sforno",
@@ -35,190 +41,76 @@
           "size": "122 KB"
         },
         {
+          "id": "torah_baal_haturim",
+          "name": "בעל הטורים על תורה",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_baal_haturim.zip",
+          "size": "2 KB"
+        },
+        {
+          "id": "torah_kli_yakar",
+          "name": "כלי יקר על תורה",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_kli_yakar.zip",
+          "size": "174 KB"
+        },
+        {
+          "id": "torah_haamek_davar",
+          "name": "העמק דבר על תורה",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_haamek_davar.zip",
+          "size": "122 KB"
+        },
+        {
+          "id": "torah_gur_aryeh",
+          "name": "גור אריה על תורה",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_gur_aryeh.zip",
+          "size": "160 KB"
+        },
+        {
           "id": "torah_targum_onqelus",
           "name": "תרגום אונקלוס על תורה",
           "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_targum_onqelus.zip",
           "size": "971 KB"
         },
         {
-          "id": "torah_all_in_one",
-          "name": "כל תורה - הכל כלול",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_all_in_one.zip",
-          "size": "3696 KB"
-        }
-      ]
-    },
-    {
-      "id": "neviim",
-      "name": "נביאים",
-      "packages": [
-        {
-          "id": "neviim_base",
-          "name": "טקסט בסיס - נביאים",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_base.zip",
-          "size": "2942 KB"
+          "id": "torah_targum_jonathan",
+          "name": "תרגום יונתן על תורה",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_targum_jonathan.zip",
+          "size": "1056 KB"
         },
         {
-          "id": "neviim_rashi",
-          "name": "רש\"י על נביאים",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_rashi.zip",
-          "size": "388 KB"
+          "id": "torah_targum_neofiti",
+          "name": "תרגום ניאופיטי על תורה",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_targum_neofiti.zip",
+          "size": "481 KB"
         },
         {
-          "id": "neviim_metzudat_david",
-          "name": "מצודת דוד על נביאים",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_metzudat_david.zip",
-          "size": "339 KB"
+          "id": "torah_genesis_all_in_one",
+          "name": "בראשית - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_genesis_all_in_one.zip",
+          "size": "1742 KB"
         },
         {
-          "id": "neviim_metzudat_zion",
-          "name": "מצודת ציון על נביאים",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_metzudat_zion.zip",
-          "size": "204 KB"
+          "id": "torah_exodus_all_in_one",
+          "name": "שמות - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_exodus_all_in_one.zip",
+          "size": "1436 KB"
         },
         {
-          "id": "neviim_radak",
-          "name": "רד\"ק על נביאים",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_radak.zip",
-          "size": "376 KB"
+          "id": "torah_leviticus_all_in_one",
+          "name": "ויקרא - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_leviticus_all_in_one.zip",
+          "size": "845 KB"
         },
         {
-          "id": "neviim_malbim",
-          "name": "מלבי\"ם על נביאים",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_malbim.zip",
-          "size": "302 KB"
+          "id": "torah_numbers_all_in_one",
+          "name": "במדבר - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_numbers_all_in_one.zip",
+          "size": "1107 KB"
         },
         {
-          "id": "neviim_ralbag",
-          "name": "רלב\"ג על נביאים",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_ralbag.zip",
-          "size": "106 KB"
-        },
-        {
-          "id": "neviim_all_in_one",
-          "name": "כל נביאים - הכל כלול",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_all_in_one.zip",
-          "size": "4659 KB"
-        }
-      ]
-    },
-    {
-      "id": "ketuvim",
-      "name": "כתובים",
-      "packages": [
-        {
-          "id": "ketuvim_base",
-          "name": "טקסט בסיס - כתובים",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_base.zip",
-          "size": "1847 KB"
-        },
-        {
-          "id": "ketuvim_rashi",
-          "name": "רש\"י על כתובים",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_rashi.zip",
-          "size": "342 KB"
-        },
-        {
-          "id": "ketuvim_metzudat_david",
-          "name": "מצודת דוד על כתובים",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_metzudat_david.zip",
-          "size": "215 KB"
-        },
-        {
-          "id": "ketuvim_metzudat_zion",
-          "name": "מצודת ציון על כתובים",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_metzudat_zion.zip",
-          "size": "136 KB"
-        },
-        {
-          "id": "ketuvim_radak",
-          "name": "רד\"ק על כתובים",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_radak.zip",
-          "size": "108 KB"
-        },
-        {
-          "id": "ketuvim_malbim",
-          "name": "מלבי\"ם על כתובים",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_malbim.zip",
-          "size": "203 KB"
-        },
-        {
-          "id": "ketuvim_ralbag",
-          "name": "רלב\"ג על כתובים",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_ralbag.zip",
-          "size": "98 KB"
-        },
-        {
-          "id": "ketuvim_all_in_one",
-          "name": "כל כתובים - הכל כלול",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_all_in_one.zip",
-          "size": "2953 KB"
-        }
-      ]
-    },
-    {
-      "id": "mishnah",
-      "name": "משנה",
-      "packages": [
-        {
-          "id": "mishnah_base",
-          "name": "טקסט בסיס - משנה",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_base.zip",
-          "size": "947 KB"
-        },
-        {
-          "id": "mishnah_bartenura",
-          "name": "ברטנורא על משנה",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_bartenura.zip",
-          "size": "519 KB"
-        },
-        {
-          "id": "mishnah_tosafot_yom_tov",
-          "name": "תוספות יום טוב על משנה",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_tosafot_yom_tov.zip",
-          "size": "154 KB"
-        },
-        {
-          "id": "mishnah_rambam",
-          "name": "רמב\"ם על משנה",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_rambam.zip",
-          "size": "312 KB"
-        },
-        {
-          "id": "mishnah_all_in_one",
-          "name": "כל משנה - הכל כלול",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_all_in_one.zip",
-          "size": "1934 KB"
-        }
-      ]
-    },
-    {
-      "id": "talmud",
-      "name": "תלמוד בבלי",
-      "packages": [
-        {
-          "id": "talmud_base",
-          "name": "טקסט בסיס - תלמוד בבלי",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_base.zip",
-          "size": "1222 KB"
-        },
-        {
-          "id": "talmud_rashi",
-          "name": "רש\"י על תלמוד בבלי",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_rashi.zip",
-          "size": "232 KB"
-        },
-        {
-          "id": "talmud_tosafot",
-          "name": "תוספות על תלמוד בבלי",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_tosafot.zip",
-          "size": "134 KB"
-        },
-        {
-          "id": "talmud_all_in_one",
-          "name": "כל תלמוד בבלי - הכל כלול",
-          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_all_in_one.zip",
-          "size": "1588 KB"
+          "id": "torah_deuteronomy_all_in_one",
+          "name": "דברים - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_deuteronomy_all_in_one.zip",
+          "size": "1186 KB"
         }
       ]
     }
