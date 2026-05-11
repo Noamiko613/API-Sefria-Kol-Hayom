@@ -1,8 +1,8 @@
 {
   "categories": [
     {
-      "id": "tanach",
-      "name": "תנ\"ך",
+      "id": "torah",
+      "name": "תורה",
       "packages": [
         {
           "id": "torah_shnayim_mikra",
@@ -87,7 +87,13 @@
           "name": "Deuteronomy - הכל כלול",
           "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_deuteronomy_all_in_one.zip",
           "size": "מחשב..."
-        },
+        }
+      ]
+    },
+    {
+      "id": "neviim",
+      "name": "נביאים",
+      "packages": [
         {
           "id": "neviim_base",
           "name": "טקסט בסיס - נביאים",
@@ -255,7 +261,13 @@
           "name": "Malachi - הכל כלול",
           "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_malachi_all_in_one.zip",
           "size": "מחשב..."
-        },
+        }
+      ]
+    },
+    {
+      "id": "ketuvim",
+      "name": "כתובים",
+      "packages": [
         {
           "id": "ketuvim_base",
           "name": "טקסט בסיס - כתובים",
