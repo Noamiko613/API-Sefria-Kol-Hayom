@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "id": "torah",
+      "name": "תורה",
+      "packages": [
+        {
+          "id": "torah_base",
+          "name": "טקסט בסיס - תורה",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_base.zip",
+          "size": "2015 KB"
+        },
+        {
+          "id": "torah_rashi",
+          "name": "רש\"י על תורה",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_rashi.zip",
+          "size": "289 KB"
+        },
+        {
+          "id": "torah_ramban",
+          "name": "רמב\"ן על תורה",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_ramban.zip",
+          "size": "253 KB"
+        },
+        {
+          "id": "torah_genesis_all_in_one",
+          "name": "Genesis - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_genesis_all_in_one.zip",
+          "size": "787 KB"
+        },
+        {
+          "id": "torah_exodus_all_in_one",
+          "name": "Exodus - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_exodus_all_in_one.zip",
+          "size": "507 KB"
+        },
+        {
+          "id": "torah_leviticus_all_in_one",
+          "name": "Leviticus - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_leviticus_all_in_one.zip",
+          "size": "324 KB"
+        },
+        {
+          "id": "torah_numbers_all_in_one",
+          "name": "Numbers - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_numbers_all_in_one.zip",
+          "size": "508 KB"
+        },
+        {
+          "id": "torah_deuteronomy_all_in_one",
+          "name": "Deuteronomy - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_deuteronomy_all_in_one.zip",
+          "size": "431 KB"
+        },
+        {
+          "id": "torah_all_in_one",
+          "name": "תורה - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/torah_all_in_one.zip",
+          "size": "2559 KB"
+        }
+      ]
+    }
+  ]
+}
