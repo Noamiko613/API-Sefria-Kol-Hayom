@@ -183,6 +183,96 @@
           "name": "II Kings - הכל כלול",
           "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_ii_kings_all_in_one.zip",
           "size": "מחשב..."
+        },
+        {
+          "id": "neviim_isaiah_all_in_one",
+          "name": "Isaiah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_isaiah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "neviim_jeremiah_all_in_one",
+          "name": "Jeremiah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_jeremiah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "neviim_ezekiel_all_in_one",
+          "name": "Ezekiel - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_ezekiel_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "neviim_hosea_all_in_one",
+          "name": "Hosea - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_hosea_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "neviim_joel_all_in_one",
+          "name": "Joel - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_joel_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "neviim_amos_all_in_one",
+          "name": "Amos - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_amos_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "neviim_obadiah_all_in_one",
+          "name": "Obadiah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_obadiah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "neviim_jonah_all_in_one",
+          "name": "Jonah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_jonah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "neviim_micah_all_in_one",
+          "name": "Micah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_micah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "neviim_nahum_all_in_one",
+          "name": "Nahum - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_nahum_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "neviim_habakkuk_all_in_one",
+          "name": "Habakkuk - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_habakkuk_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "neviim_zephaniah_all_in_one",
+          "name": "Zephaniah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_zephaniah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "neviim_haggai_all_in_one",
+          "name": "Haggai - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_haggai_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "neviim_zechariah_all_in_one",
+          "name": "Zechariah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_zechariah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "neviim_malachi_all_in_one",
+          "name": "Malachi - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/neviim_malachi_all_in_one.zip",
+          "size": "מחשב..."
         }
       ]
     },
@@ -249,6 +339,66 @@
           "name": "Job - הכל כלול",
           "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_job_all_in_one.zip",
           "size": "מחשב..."
+        },
+        {
+          "id": "ketuvim_song_of_songs_all_in_one",
+          "name": "Song of Songs - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_song_of_songs_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "ketuvim_ruth_all_in_one",
+          "name": "Ruth - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_ruth_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "ketuvim_lamentations_all_in_one",
+          "name": "Lamentations - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_lamentations_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "ketuvim_ecclesiastes_all_in_one",
+          "name": "Ecclesiastes - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_ecclesiastes_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "ketuvim_esther_all_in_one",
+          "name": "Esther - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_esther_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "ketuvim_daniel_all_in_one",
+          "name": "Daniel - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_daniel_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "ketuvim_ezra_all_in_one",
+          "name": "Ezra - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_ezra_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "ketuvim_nehemiah_all_in_one",
+          "name": "Nehemiah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_nehemiah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "ketuvim_i_chronicles_all_in_one",
+          "name": "I Chronicles - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_i_chronicles_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "ketuvim_ii_chronicles_all_in_one",
+          "name": "II Chronicles - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/ketuvim_ii_chronicles_all_in_one.zip",
+          "size": "מחשב..."
         }
       ]
     },
@@ -293,9 +443,375 @@
           "size": "מחשב..."
         },
         {
+          "id": "mishnah_peah_all_in_one",
+          "name": "Peah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_peah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_demai_all_in_one",
+          "name": "Demai - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_demai_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_kilayim_all_in_one",
+          "name": "Kilayim - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_kilayim_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_sheviit_all_in_one",
+          "name": "Sheviit - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_sheviit_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_terumot_all_in_one",
+          "name": "Terumot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_terumot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_maasrot_all_in_one",
+          "name": "Maasrot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_maasrot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_maaser_sheni_all_in_one",
+          "name": "Maaser Sheni - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_maaser_sheni_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_challah_all_in_one",
+          "name": "Challah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_challah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_orlah_all_in_one",
+          "name": "Orlah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_orlah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_bikkurim_all_in_one",
+          "name": "Bikkurim - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_bikkurim_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
           "id": "mishnah_shabbat_all_in_one",
           "name": "Shabbat - הכל כלול",
           "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_shabbat_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_eruvin_all_in_one",
+          "name": "Eruvin - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_eruvin_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_pesachim_all_in_one",
+          "name": "Pesachim - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_pesachim_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_shekalim_all_in_one",
+          "name": "Shekalim - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_shekalim_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_yoma_all_in_one",
+          "name": "Yoma - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_yoma_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_sukkah_all_in_one",
+          "name": "Sukkah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_sukkah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_beitzah_all_in_one",
+          "name": "Beitzah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_beitzah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_rosh_hashanah_all_in_one",
+          "name": "Rosh Hashanah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_rosh_hashanah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_taanit_all_in_one",
+          "name": "Taanit - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_taanit_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_megillah_all_in_one",
+          "name": "Megillah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_megillah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_moed_katan_all_in_one",
+          "name": "Moed Katan - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_moed_katan_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_chagigah_all_in_one",
+          "name": "Chagigah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_chagigah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_yevamot_all_in_one",
+          "name": "Yevamot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_yevamot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_ketubot_all_in_one",
+          "name": "Ketubot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_ketubot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_nedarim_all_in_one",
+          "name": "Nedarim - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_nedarim_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_nazir_all_in_one",
+          "name": "Nazir - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_nazir_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_sotah_all_in_one",
+          "name": "Sotah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_sotah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_gittin_all_in_one",
+          "name": "Gittin - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_gittin_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_kiddushin_all_in_one",
+          "name": "Kiddushin - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_kiddushin_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_bava_kamma_all_in_one",
+          "name": "Bava Kamma - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_bava_kamma_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_bava_metzia_all_in_one",
+          "name": "Bava Metzia - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_bava_metzia_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_bava_batra_all_in_one",
+          "name": "Bava Batra - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_bava_batra_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_sanhedrin_all_in_one",
+          "name": "Sanhedrin - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_sanhedrin_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_makkot_all_in_one",
+          "name": "Makkot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_makkot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_shevuot_all_in_one",
+          "name": "Shevuot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_shevuot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_eduyot_all_in_one",
+          "name": "Eduyot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_eduyot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_avodah_zarah_all_in_one",
+          "name": "Avodah Zarah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_avodah_zarah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_avot_all_in_one",
+          "name": "Avot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_avot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_horayot_all_in_one",
+          "name": "Horayot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_horayot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_zevachim_all_in_one",
+          "name": "Zevachim - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_zevachim_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_menachot_all_in_one",
+          "name": "Menachot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_menachot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_chullin_all_in_one",
+          "name": "Chullin - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_chullin_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_bekhorot_all_in_one",
+          "name": "Bekhorot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_bekhorot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_arakhin_all_in_one",
+          "name": "Arakhin - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_arakhin_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_temurah_all_in_one",
+          "name": "Temurah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_temurah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_keritot_all_in_one",
+          "name": "Keritot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_keritot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_meilah_all_in_one",
+          "name": "Meilah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_meilah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_tamid_all_in_one",
+          "name": "Tamid - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_tamid_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_middot_all_in_one",
+          "name": "Middot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_middot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_kinnim_all_in_one",
+          "name": "Kinnim - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_kinnim_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_kelim_all_in_one",
+          "name": "Kelim - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_kelim_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_oholot_all_in_one",
+          "name": "Oholot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_oholot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_negaim_all_in_one",
+          "name": "Negaim - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_negaim_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_parah_all_in_one",
+          "name": "Parah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_parah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_tahorot_all_in_one",
+          "name": "Tahorot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_tahorot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_mikvaot_all_in_one",
+          "name": "Mikvaot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_mikvaot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_niddah_all_in_one",
+          "name": "Niddah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_niddah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_makhshirin_all_in_one",
+          "name": "Makhshirin - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_makhshirin_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_zavim_all_in_one",
+          "name": "Zavim - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_zavim_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_tevul_yom_all_in_one",
+          "name": "Tevul Yom - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_tevul_yom_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_yadayim_all_in_one",
+          "name": "Yadayim - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_yadayim_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "mishnah_oktzin_all_in_one",
+          "name": "Oktzin - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/mishnah_oktzin_all_in_one.zip",
           "size": "מחשב..."
         }
       ]
@@ -333,6 +849,222 @@
           "name": "Shabbat - הכל כלול",
           "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_shabbat_all_in_one.zip",
           "size": "מחשב..."
+        },
+        {
+          "id": "talmud_eruvin_all_in_one",
+          "name": "Eruvin - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_eruvin_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_pesachim_all_in_one",
+          "name": "Pesachim - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_pesachim_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_shekalim_all_in_one",
+          "name": "Shekalim - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_shekalim_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_yoma_all_in_one",
+          "name": "Yoma - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_yoma_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_sukkah_all_in_one",
+          "name": "Sukkah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_sukkah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_beitzah_all_in_one",
+          "name": "Beitzah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_beitzah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_rosh_hashanah_all_in_one",
+          "name": "Rosh Hashanah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_rosh_hashanah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_taanit_all_in_one",
+          "name": "Taanit - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_taanit_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_megillah_all_in_one",
+          "name": "Megillah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_megillah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_moed_katan_all_in_one",
+          "name": "Moed Katan - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_moed_katan_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_chagigah_all_in_one",
+          "name": "Chagigah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_chagigah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_yevamot_all_in_one",
+          "name": "Yevamot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_yevamot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_ketubot_all_in_one",
+          "name": "Ketubot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_ketubot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_nedarim_all_in_one",
+          "name": "Nedarim - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_nedarim_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_nazir_all_in_one",
+          "name": "Nazir - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_nazir_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_sotah_all_in_one",
+          "name": "Sotah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_sotah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_gittin_all_in_one",
+          "name": "Gittin - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_gittin_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_kiddushin_all_in_one",
+          "name": "Kiddushin - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_kiddushin_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_bava_kamma_all_in_one",
+          "name": "Bava Kamma - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_bava_kamma_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_bava_metzia_all_in_one",
+          "name": "Bava Metzia - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_bava_metzia_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_bava_batra_all_in_one",
+          "name": "Bava Batra - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_bava_batra_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_sanhedrin_all_in_one",
+          "name": "Sanhedrin - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_sanhedrin_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_makkot_all_in_one",
+          "name": "Makkot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_makkot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_shevuot_all_in_one",
+          "name": "Shevuot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_shevuot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_avodah_zarah_all_in_one",
+          "name": "Avodah Zarah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_avodah_zarah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_horayot_all_in_one",
+          "name": "Horayot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_horayot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_zevachim_all_in_one",
+          "name": "Zevachim - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_zevachim_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_menachot_all_in_one",
+          "name": "Menachot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_menachot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_chullin_all_in_one",
+          "name": "Chullin - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_chullin_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_bekhorot_all_in_one",
+          "name": "Bekhorot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_bekhorot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_arakhin_all_in_one",
+          "name": "Arakhin - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_arakhin_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_temurah_all_in_one",
+          "name": "Temurah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_temurah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_keritot_all_in_one",
+          "name": "Keritot - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_keritot_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_meilah_all_in_one",
+          "name": "Meilah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_meilah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_tamid_all_in_one",
+          "name": "Tamid - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_tamid_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "talmud_niddah_all_in_one",
+          "name": "Niddah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/talmud_niddah_all_in_one.zip",
+          "size": "מחשב..."
         }
       ]
     },
@@ -362,6 +1094,174 @@
           "id": "rambam_foundations_of_the_torah_all_in_one",
           "name": "Foundations of the Torah - הכל כלול",
           "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_foundations_of_the_torah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_human_dispositions_all_in_one",
+          "name": "Human Dispositions - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_human_dispositions_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_torah_study_all_in_one",
+          "name": "Torah Study - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_torah_study_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_foreign_worship_and_customs_of_the_nations_all_in_one",
+          "name": "Foreign Worship and Customs of the Nations - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_foreign_worship_and_customs_of_the_nations_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_repentance_all_in_one",
+          "name": "Repentance - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_repentance_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_reading_the_shema_all_in_one",
+          "name": "Reading the Shema - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_reading_the_shema_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_prayer_and_the_priestly_blessing_all_in_one",
+          "name": "Prayer and the Priestly Blessing - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_prayer_and_the_priestly_blessing_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_tefillin_mezuzah_and_the_torah_scroll_all_in_one",
+          "name": "Tefillin, Mezuzah and the Torah Scroll - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_tefillin_mezuzah_and_the_torah_scroll_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_fringes_all_in_one",
+          "name": "Fringes - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_fringes_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_blessings_all_in_one",
+          "name": "Blessings - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_blessings_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_circumcision_all_in_one",
+          "name": "Circumcision - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_circumcision_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_sabbath_all_in_one",
+          "name": "Sabbath - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_sabbath_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_eruvin_all_in_one",
+          "name": "Eruvin - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_eruvin_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_rest_on_the_tenth_of_tishrei_all_in_one",
+          "name": "Rest on the Tenth of Tishrei - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_rest_on_the_tenth_of_tishrei_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_rest_on_a_holiday_all_in_one",
+          "name": "Rest on a Holiday - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_rest_on_a_holiday_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_leavened_and_unleavened_bread_all_in_one",
+          "name": "Leavened and Unleavened Bread - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_leavened_and_unleavened_bread_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_shofar_sukkah_and_lulav_all_in_one",
+          "name": "Shofar, Sukkah and Lulav - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_shofar_sukkah_and_lulav_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_sheqel_dues_all_in_one",
+          "name": "Sheqel Dues - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_sheqel_dues_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_sanctification_of_the_new_month_all_in_one",
+          "name": "Sanctification of the New Month - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_sanctification_of_the_new_month_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_fasts_all_in_one",
+          "name": "Fasts - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_fasts_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_scroll_of_esther_and_hanukkah_all_in_one",
+          "name": "Scroll of Esther and Hanukkah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_scroll_of_esther_and_hanukkah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_marriage_all_in_one",
+          "name": "Marriage - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_marriage_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_divorce_all_in_one",
+          "name": "Divorce - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_divorce_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_levirate_marriage_and_release_all_in_one",
+          "name": "Levirate Marriage and Release - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_levirate_marriage_and_release_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_virgin_maiden_all_in_one",
+          "name": "Virgin Maiden - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_virgin_maiden_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_woman_suspected_of_infidelity_all_in_one",
+          "name": "Woman Suspected of Infidelity - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_woman_suspected_of_infidelity_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_forbidden_intercourse_all_in_one",
+          "name": "Forbidden Intercourse - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_forbidden_intercourse_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_forbidden_foods_all_in_one",
+          "name": "Forbidden Foods - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_forbidden_foods_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "rambam_ritual_slaughter_all_in_one",
+          "name": "Ritual Slaughter - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/rambam_ritual_slaughter_all_in_one.zip",
           "size": "מחשב..."
         }
       ]
@@ -398,6 +1298,24 @@
           "id": "tur_orach_chayim_all_in_one",
           "name": "Orach Chayim - הכל כלול",
           "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/tur_orach_chayim_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "tur_yoreh_deah_all_in_one",
+          "name": "Yoreh Deah - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/tur_yoreh_deah_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "tur_even_haezer_all_in_one",
+          "name": "Even HaEzer - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/tur_even_haezer_all_in_one.zip",
+          "size": "מחשב..."
+        },
+        {
+          "id": "tur_choshen_mishpat_all_in_one",
+          "name": "Choshen Mishpat - הכל כלול",
+          "url": "https://raw.githubusercontent.com/Noamiko613/API-Sefria-Kol-Hayom/main/zips/tur_choshen_mishpat_all_in_one.zip",
           "size": "מחשב..."
         }
       ]
